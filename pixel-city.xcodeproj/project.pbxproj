@@ -15,6 +15,7 @@
 		CC8C97F320321DC700DD9E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8C97F120321DC700DD9E5D /* LaunchScreen.storyboard */; };
 		CC8C97FF2032360800DD9E5D /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C97FE2032360800DD9E5D /* DroppablePin.swift */; };
 		CC8C98012033256800DD9E5D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C98002033256800DD9E5D /* PhotoCell.swift */; };
+		CC8C9803203328AD00DD9E5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C9802203328AD00DD9E5D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		CC8C97F420321DC700DD9E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC8C97FE2032360800DD9E5D /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		CC8C98002033256800DD9E5D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		CC8C9802203328AD00DD9E5D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DD7D5F3578016C4165BFE5AF /* Pods_pixel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 		CC8C97FD20321E2F00DD9E5D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				CC8C9802203328AD00DD9E5D /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8C9803203328AD00DD9E5D /* Constants.swift in Sources */,
 				CC8C98012033256800DD9E5D /* PhotoCell.swift in Sources */,
 				CC8C97EB20321DC700DD9E5D /* MapVC.swift in Sources */,
 				CC8C97FF2032360800DD9E5D /* DroppablePin.swift in Sources */,
