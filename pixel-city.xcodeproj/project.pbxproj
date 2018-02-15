@@ -16,6 +16,9 @@
 		CC8C97FF2032360800DD9E5D /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C97FE2032360800DD9E5D /* DroppablePin.swift */; };
 		CC8C98012033256800DD9E5D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C98002033256800DD9E5D /* PhotoCell.swift */; };
 		CC8C9803203328AD00DD9E5D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C9802203328AD00DD9E5D /* Constants.swift */; };
+		CC8C9807203360FF00DD9E5D /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C9806203360FF00DD9E5D /* PopVC.swift */; };
+		CCB99CBA2035E43F009E785A /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB99CB92035E43F009E785A /* PhotoInfo.swift */; };
+		CCB99CBD2035E5FD009E785A /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB99CBC2035E5FD009E785A /* PhotoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		CC8C97FE2032360800DD9E5D /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		CC8C98002033256800DD9E5D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		CC8C9802203328AD00DD9E5D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CC8C9806203360FF00DD9E5D /* PopVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
+		CCB99CB92035E43F009E785A /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		CCB99CBC2035E5FD009E785A /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		DD7D5F3578016C4165BFE5AF /* Pods_pixel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,8 +81,9 @@
 		CC8C97E720321DC700DD9E5D /* pixel-city */ = {
 			isa = PBXGroup;
 			children = (
+				CCB99CBB2035E5F0009E785A /* Services */,
 				CC8C97FD20321E2F00DD9E5D /* Utilities */,
-				CC8C97FC20321E1B00DD9E5D /* Extensions */,
+				CC8C97FC20321E1B00DD9E5D /* Model */,
 				CC8C97FB20321E1400DD9E5D /* View */,
 				CC8C97FA20321E0D00DD9E5D /* Controller */,
 				CC8C97E820321DC700DD9E5D /* AppDelegate.swift */,
@@ -91,6 +98,7 @@
 		CC8C97FA20321E0D00DD9E5D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CC8C9806203360FF00DD9E5D /* PopVC.swift */,
 				CC8C97EA20321DC700DD9E5D /* MapVC.swift */,
 			);
 			path = Controller;
@@ -105,11 +113,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CC8C97FC20321E1B00DD9E5D /* Extensions */ = {
+		CC8C97FC20321E1B00DD9E5D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCB99CB92035E43F009E785A /* PhotoInfo.swift */,
 			);
-			path = Extensions;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CC8C97FD20321E2F00DD9E5D /* Utilities */ = {
@@ -118,6 +127,14 @@
 				CC8C9802203328AD00DD9E5D /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CCB99CBB2035E5F0009E785A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CCB99CBC2035E5FD009E785A /* PhotoService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		DC660618BEB10DF7B018A2D7 /* Pods */ = {
@@ -209,11 +226,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -260,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8C9807203360FF00DD9E5D /* PopVC.swift in Sources */,
 				CC8C9803203328AD00DD9E5D /* Constants.swift in Sources */,
+				CCB99CBA2035E43F009E785A /* PhotoInfo.swift in Sources */,
 				CC8C98012033256800DD9E5D /* PhotoCell.swift in Sources */,
 				CC8C97EB20321DC700DD9E5D /* MapVC.swift in Sources */,
+				CCB99CBD2035E5FD009E785A /* PhotoService.swift in Sources */,
 				CC8C97FF2032360800DD9E5D /* DroppablePin.swift in Sources */,
 				CC8C97E920321DC700DD9E5D /* AppDelegate.swift in Sources */,
 			);
